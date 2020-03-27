@@ -1659,4 +1659,4 @@ relationship ManyToMany {
 }
 
 // Set an angular suffix
- angularSuffix * with SchoolPlatform
+//angularSuffix * with SchoolPlatform
