@@ -1,0 +1,1662 @@
+
+
+/**
+ * StreamTermMemberShipAggregatesDivision entity.
+ * @author Baker.
+ */
+entity ReportAggregatesDivision {
+	dateAndTimeOfCreation LocalDateTime,
+    lowerTotalAggregates Float,
+	upperTotalAggregates Float,
+	name String,
+	symbol String,
+	orderIndex Integer
+}
+
+
+/**
+ * FormTermMemberShipAggregatesDivision entity.
+ * @author Baker.
+ */
+entity FormTermMemberShipAggregatesDivision {
+	dateAndTimeOfCreation LocalDateTime,
+    lowerTotalAggregates Float,
+	upperTotalAggregates Float,
+	name String,
+	symbol String,
+	orderIndex Integer
+}
+
+/**
+ * StreamTermMemberShipAggregatesDivision entity.
+ * @author Baker.
+ */
+entity StreamTermMemberShipAggregatesDivision {
+	dateAndTimeOfCreation LocalDateTime,
+    lowerTotalAggregates Float,
+	upperTotalAggregates Float,
+	name String,
+	symbol String,
+	orderIndex Integer
+}
+
+/**
+ * SubjectAssessmentTaskAggregatesGrading entity.
+ * @author Baker.
+ */
+entity SubjectAssessmentTaskAggregatesGrading {
+	dateAndTimeOfCreation LocalDateTime,
+	lowerScoreLimit Float,
+	upperScoreLimit Float,
+	name String,
+	symbol String,
+	weight Float
+}
+
+/**
+ * StreamSubjectTermEnrollementShipAggregatesGrading entity.
+ * @author Baker.
+ */
+entity PaperAssessmentTaskAggregatesGrading {
+	dateAndTimeOfCreation LocalDateTime,
+	lowerScoreLimit Float,
+	upperScoreLimit Float,
+	name String,
+	symbol String,
+	weight Float
+}
+
+/**
+ * FormPaperTermEnrollementShipAggregatesGrading entity.
+ * @author Baker.
+ */
+entity FormPaperTermEnrollementShipAggregatesGrading {
+	dateAndTimeOfCreation LocalDateTime,
+	lowerScoreLimit Float,
+	upperScoreLimit Float,
+	name String,
+	symbol String,
+	weight Float
+}
+
+/**
+ * StreamPaperTermEnrollementShipAggregatesGrading entity.
+ * @author Baker.
+ */
+entity StreamPaperTermEnrollementShipAggregatesGrading {
+	dateAndTimeOfCreation LocalDateTime,
+	lowerScoreLimit Float,
+	upperScoreLimit Float,
+	name String,
+	symbol String,
+	weight Float
+}
+
+/**
+ * SubjectAssessmentTaskAggregatesGrading entity.
+ * @author Baker.
+ */
+entity SubjectAssessmentTaskAggregatesGrading {
+	dateAndTimeOfCreation LocalDateTime,
+	lowerScoreLimit Float,
+	upperScoreLimit Float,
+	name String,
+	symbol String,
+	weight Float
+}
+
+/**
+ * PaperAssessmentTaskAggregatesGrading entity.
+ * @author Baker.
+ */
+entity PaperAssessmentTaskAggregatesGrading {
+	dateAndTimeOfCreation LocalDateTime,
+	lowerScoreLimit Float,
+	upperScoreLimit Float,
+	name String,
+	symbol String,
+	weight Float
+}
+
+/**
+ * SubjectAssessmentTaskAssessmentUnitAssessmentUnit entity.
+ * @author Baker.
+ */
+entity SubjectAssessmentTaskAssessmentUnitAssessmentUnit {
+	dateAndTimeOfCreation LocalDateTime,
+	contribution Float
+}
+
+/**
+ * PaperAssessmentTaskAssessmentUnitAssessmentUnit entity.
+ * @author Baker.
+ */
+entity PaperAssessmentTaskAssessmentUnitAssessmentUnit {
+	dateAndTimeOfCreation LocalDateTime,
+	contribution Float
+}
+
+/**
+ * TermSubjectEnrollementShipAssessmentAssessmentUnit entity.
+ * @author Baker.
+ */
+entity TermSubjectEnrollementShipAssessmentAssessmentUnit {
+	dateAndTimeOfCreation LocalDateTime,
+	contribution Float
+}
+
+/**
+ * PaperSubjectEnrollementShipAssessmentAssessmentUnit entity.
+ * @author Baker.
+ */
+entity PaperSubjectEnrollementShipAssessmentAssessmentUnit {
+	dateAndTimeOfCreation LocalDateTime,
+	contribution Float
+}
+
+/**
+ * AttendenceStatus Enum.
+ * @author Baker.
+ */
+enum AttendenceStatus {
+	NOT_TAKEN,
+	PRESENT,
+	LATE,
+	ABSENT,
+	NOT_SUPOSSED_TO_BE_PRESENT
+}
+
+/**
+ * Clinic entity.
+ * @author Baker.
+ */
+entity Clinic {
+	dateAndTimeOfCreation LocalDateTime,
+	clinicName String,
+    location String
+}
+
+/**
+ * SchoolParentYearClinicalTreatment entity.
+ * @author Baker.
+ */
+entity SchoolParentYearClinicalTreatment {
+	dateAndTimeOfCreation LocalDateTime,
+	dateOfTreatment LocalDateTime,
+    descriptioOfIllness String,
+    descriptionOfTreatmentGiven String,
+    costOfTreatment Float
+}
+
+/**
+ * SchoolParentYearClinicalTreatment entity.
+ * @author Baker.
+ */
+entity SchoolStudentYearClinicalTreatment {
+	dateAndTimeOfCreation LocalDateTime,
+	dateOfTreatment LocalDateTime,
+    descriptioOfIllness String,
+    descriptionOfTreatmentGiven String,
+    costOfTreatment Float
+}
+
+/**
+ * SchoolStaffMemberYearClinicalTreatment entity.
+ * @author Baker.
+ */
+entity SchoolStaffMemberYearClinicalTreatment {
+	dateAndTimeOfCreation LocalDateTime,
+	dateOfTreatment LocalDateTime,
+    descriptioOfIllness String,
+    descriptionOfTreatmentGiven String,
+    costOfTreatment Float
+}
+
+/**
+ * SchoolDirectorYearClinicalTreatment entity.
+ * @author Baker.
+ */
+entity SchoolDirectorYearClinicalTreatment {
+	dateAndTimeOfCreation LocalDateTime,
+	dateOfTreatment LocalDateTime,
+    descriptioOfIllness String,
+    descriptionOfTreatmentGiven String,
+    costOfTreatment Float
+}
+
+/**
+ * Country entity.
+ * @author Baker.
+ */
+entity Country {
+	dateAndTimeOfCreation LocalDateTime,
+	countryName String,
+    countryZipCode String,
+    nationality String,
+    countryCode String
+}
+
+/**
+ * CustomExpense entity.
+ * @author Baker.
+ */
+entity CustomExpense {
+	dateAndTimeOfCreation LocalDateTime,
+	expenseName String
+}
+
+/**
+ * CustomExpenseDefinition entity.
+ * @author Baker.
+ */
+entity CustomExpenseDefinition {
+	dateAndTimeOfCreation LocalDateTime,
+    startDateAndTime LocalDateTime,
+    endDateAndTime LocalDateTime,
+    isActive Boolean,
+    amount Float
+}
+
+/**
+ * CustomExpenseDefinitionsContainer entity.
+ * @author Baker.
+ */
+entity CustomExpenseDefinitionsContainer {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * CustomExpenseIntervalPaymentStatus entity.
+ * @author Baker.
+ */
+entity CustomExpenseIntervalPaymentStatus {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * CustomExpensePayment entity.
+ * @author Baker.
+ */
+entity CustomExpensePayment {
+	dateAndTimeOfCreation LocalDateTime,
+    dateAndTimeOfPayment LocalDateTime
+}
+
+/**
+ * CustomExpensePaymentInstallment entity.
+ * @author Baker.
+ */
+entity CustomExpensePaymentInstallment {
+	dateAndTimeOfCreation LocalDateTime,
+    amountPaid Float,
+    reason String
+}
+
+/**
+ * CustomIncome entity.
+ * @author Baker.
+ */
+entity CustomIncome {
+	dateAndTimeOfCreation LocalDateTime,
+    incomeName String
+}
+
+/**
+ * CustomIncomeDefinition entity.
+ * @author Baker.
+ */
+entity CustomIncomeDefinition {
+	dateAndTimeOfCreation LocalDateTime,
+    startDateAndTime LocalDateTime,
+    endDateAndTime LocalDateTime,
+    isActive String,
+    amount Float
+}
+
+/**
+ * CustomIncomeIntervalPaymentStatus entity.
+ * @author Baker.
+ */
+entity CustomIncomeIntervalPaymentStatus {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * CustomIncomePayment entity.
+ * @author Baker.
+ */
+entity CustomIncomePayment {
+	dateAndTimeOfCreation LocalDateTime,
+    dateAndTimeOfPayment LocalDateTime
+}
+
+/**
+ * CustomIncomePaymentInstallment entity.
+ * @author Baker.
+ */
+entity CustomIncomePaymentInstallment {
+	dateAndTimeOfCreation LocalDateTime,
+    amountPaid Float,
+    reason String
+}
+
+/**
+ * CustomSchoolHumanEntity entity.
+ * @author Baker.
+ */
+entity CustomSchoolHumanEntity {
+	dateAndTimeOfCreation LocalDateTime,
+ 	title String,
+}
+
+/**
+ * CustomSchoolHumanEntityYear entity.
+ * @author Baker.
+ */
+entity CustomSchoolHumanEntityYear {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * ExpenseIntervalDefinition entity.
+ * @author Baker.
+ */
+entity ExpenseIntervalDefinition {
+	dateAndTimeOfCreation LocalDateTime,
+    name String,
+    relationShipWithBasicUnit Float
+}
+
+/**
+ * ExpensePaymentInterval entity.
+ * @author Baker.
+ */
+entity ExpensePaymentInterval {
+	dateAndTimeOfCreation LocalDateTime,
+    startDateAndTime LocalDateTime,
+    endDateAndTime LocalDateTime,
+    name String
+}
+
+/**
+ * Fee entity.
+ * @author Baker.
+ */
+entity Fee {
+	dateAndTimeOfCreation LocalDateTime,
+	description String,
+    name String
+}
+
+/**
+ * FeesPayment entity.
+ * @author Baker.
+ */
+entity FeesPayment {
+	dateAndTimeOfCreation LocalDateTime,
+	amountPaid Float,
+	telephoneNumber String,
+	bank String,
+	accountNumber String
+}
+
+/**
+ * Form entity.
+ * @author Baker.
+ */
+entity Form {
+	dateAndTimeOfCreation LocalDateTime,
+    hasStreams Boolean,
+    isCandidateClass Boolean,
+    name String,
+    shortName String,
+    hasOptionalSubjects Boolean
+}
+
+/**
+ * FormAnnualAttendenceRegister entity.
+ * @author Baker.
+ */
+entity FormAnnualAttendenceRegister {
+	dateAndTimeOfCreation LocalDateTime,
+}
+
+/**
+ * FormFee entity.
+ * @author Baker.
+ */
+entity FormFee {
+	dateAndTimeOfCreation LocalDateTime,
+}
+
+/**
+ * FormFeeDefinition entity.
+ * @author Baker.
+ */
+entity FormFeeDefinition {
+	dateAndTimeOfCreation LocalDateTime,
+    startDateAndTime LocalDateTime,
+    endDateAndTime LocalDateTime,
+    isActive Boolean,
+    amount Float
+}
+
+/**
+ * FormFeeYear entity.
+ * @author Baker.
+ */
+entity FormFeeYear {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * FormPaper entity.
+ * @author Baker.
+ */
+entity FormPaper {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * FormPaperTermEnrollementShip entity.
+ * @author Baker.
+ */
+entity FormPaperTermEnrollementShip {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * FormPaperYearEnrollementShip entity.
+ * @author Baker.
+ */
+entity FormPaperYearEnrollementShip{
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * FormSchoolRequirementDefinition entity.
+ * @author Baker.
+ */
+entity FormSchoolRequirementDefinition {
+	dateAndTimeOfCreation LocalDateTime,
+    quantityNeeded Float
+}
+
+/**
+ * FormSchoolRequirementYear entity.
+ * @author Baker.
+ */
+entity FormSchoolRequirementYear {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * FormSubject entity.
+ * @author Baker.
+ */
+entity FormSubject {
+	dateAndTimeOfCreation LocalDateTime,
+}
+
+/**
+ * FormSubjectTermEnrollementShip entity.
+ * @author Baker.
+ */
+entity FormSubjectTermEnrollementShip {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * FormSubjectTermEnrollementShipTeacher entity.
+ * @author Baker.
+ */
+entity FormSubjectTermEnrollementShipTeacher {
+	dateAndTimeOfCreation LocalDateTime,
+    startDateAndTime LocalDateTime,
+    endDateAndTime LocalDateTime,
+    isActive Boolean,
+    name String required
+}
+
+/**
+ * FormSubjectTermEnrollementShipTeacherContainer entity.
+ * @author Baker.
+ */
+entity FormSubjectTermEnrollementShipTeacherContainer { 
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * FormSubjectYearEnrollementShip entity.
+ * @author Baker.
+ */
+entity FormSubjectYearEnrollementShip {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * FormTerminalAttendenceRegister entity.
+ * @author Baker.
+ */
+entity FormTerminalAttendenceRegister {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * FormTermMemberShip entity.
+ * @author Baker.
+ */
+entity FormTermMemberShip {
+	dateAndTimeOfCreation LocalDateTime,
+    boardersReportingDateAndTime LocalDateTime,
+    startDateAndTime LocalDateTime,
+    endDateAndTime LocalDateTime 
+}
+
+/**
+ * FormWeeklyAttendenceRegister entity.
+ * @author Baker.
+ */
+entity FormWeeklyAttendenceRegister {
+	dateAndTimeOfCreation LocalDateTime,
+    startingDate LocalDateTime,
+    endDate LocalDateTime
+}
+
+/**
+ * FormYearMemberShip entity.
+ * @author Baker.
+ */
+entity FormYearMemberShip {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * Gender Enum.
+ * @author Baker.
+ */
+enum Gender {
+	MALE,
+	FEMALE
+}
+
+/**
+ * GradePointDivision entity.
+ * @author Baker.
+ */
+entity GradePointDivision {
+	dateAndTimeOfCreation LocalDateTime,
+	lowerTotalAggregates Float,
+	upperTotalAggregates Float,
+	name String,
+	symbol String,
+	orderIndex Integer
+}
+
+/**
+ * GradePointGrading entity.
+ * @author Baker.
+ */
+entity GradePointGrading {
+	dateAndTimeOfCreation LocalDateTime,
+    upperScoreLimit Float,
+	name String,
+	symbol String,
+	weight Float,
+	lowerScoreLimit Float
+}
+
+/**
+ * Hostel entity.
+ * @author Baker.
+ */
+entity Hostel {
+	dateAndTimeOfCreation LocalDateTime,
+    name String,
+	location String,
+	shortName String
+}
+
+/**
+ * IncomePaymentIntervalDefinition entity.
+ * @author Baker.
+ */
+entity IncomePaymentIntervalDefinition {
+	dateAndTimeOfCreation LocalDateTime,
+    name String
+}
+
+/**
+ * Level entity.
+ * @author Baker.
+ */
+entity Level {
+	dateAndTimeOfCreation LocalDateTime,
+	levelName String,
+	membersCommonName String
+}
+
+/**
+ * LibrarianSchoolStaffMember entity.
+ * @author Baker.
+ */
+entity LibrarianSchoolStaffMember {
+	dateAndTimeOfCreation LocalDateTime,
+    startDate LocalDateTime,
+	endDate LocalDateTime,
+	isActive Boolean,
+    name String
+}
+
+/**
+ * Library entity.
+ * @author Baker.
+ */
+entity Library {
+	dateAndTimeOfCreation LocalDateTime,
+	name String,
+	location String,
+}
+
+/**
+ * LibraryItem entity.
+ * @author Baker.
+ */
+entity LibraryItem {
+	dateAndTimeOfCreation LocalDateTime,
+	author String,
+	name String,
+	dateOfPublication LocalDateTime,
+	numberInStock Integer
+}
+
+/**
+ * LibraryItemCategory entity.
+ * @author Baker.
+ */
+entity LibraryItemCategory {
+	dateAndTimeOfCreation LocalDateTime,
+	name String
+}
+
+/**
+ * LibraryItemTransaction entity.
+ * @author Baker.
+ */
+entity LibraryItemTransaction {
+	dateAndTimeOfCreation LocalDateTime,
+    dateOfTaking LocalDateTime,
+	dateOfBringingBack LocalDateTime,
+	settled Boolean
+}
+
+/**
+ * MoneyTransaction entity.
+ * @author Baker.
+ */
+entity MoneyTransaction {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * TransactionType Enum.
+ * @author Baker.
+ */
+enum TransactionType {
+	CREDIT,
+	BEBIT
+}
+
+/**
+ * NormalRemark entity.
+ * @author Baker.
+ */
+entity NormalRemark {
+	dateAndTimeOfCreation LocalDateTime,
+    lowerMarkLimit Float,
+	upperMarkLimit Float,
+	comment String
+}
+
+/**
+ * Paper entity.
+ * @author Baker.
+ */
+entity Paper {
+	dateAndTimeOfCreation LocalDateTime,
+    paperName String;
+	paperShortName String;
+	paperCode  String,
+}
+
+/**
+ * PaperAssessmentTask entity.
+ * @author Baker.
+ */
+entity PaperAssessmentTask {
+	dateAndTimeOfCreation LocalDateTime,
+	markedOutOf Float,
+	name String
+}
+
+/**
+ * PaperLesson entity.
+ * @author Baker.
+ */
+entity PaperLesson {
+	dateAndTimeOfCreation LocalDateTime,
+    location  String,
+	startDateAndTime LocalDateTime,
+	endDateAndTime LocalDateTime	
+}
+
+/**
+ * Person entity.
+ * @author Baker.
+ */
+entity Person {
+	dateAndTimeOfCreation LocalDateTime,
+	lastName String,
+	firstName String,
+	otherNames String,
+	email String,
+	primaryTelephoneContact String,
+	secondaryTelephoneContact String,
+	dateAndTimeOfBirth LocalDateTime;
+	age Float,
+	password  String
+	religion String,
+	bloodGroup String,
+	nationalIdentificationNumber  String,
+	gender  Gender,
+	imagePath  String,
+	signaturePath String,
+}
+
+/**
+ * SalaryPayment entity.
+ * @author Baker.
+ */
+entity SalaryPayment {
+	dateAndTimeOfCreation LocalDateTime,
+    dateAndTimeOfPayment LocalDateTime
+}
+
+/**
+ * YearNamingStrategy Enum.
+ * @author Baker.
+ */
+enum YearNamingStrategy {
+		SINGLE_YEAR,
+		BETWEEN_TWO_YEARS
+}
+
+/**
+ * School Entity.
+ * @author Baker.
+ */
+entity School {
+	dateAndTimeOfCreation LocalDateTime,
+	schoolName String,
+    schoolShortName String,
+    yearNamingStrategy YearNamingStrategy
+}
+
+/**
+ * SchoolAcademicYear entity.
+ * @author Baker.
+ */
+entity SchoolAcademicYear {
+	dateAndTimeOfCreation LocalDateTime,
+    name String,
+	numberOfTerms Integer,
+    startDateAndTime LocalDateTime,
+    endDateAndTime LocalDateTime
+}
+
+/**
+ * SchoolClinicStaffMember entity.
+ * @author Baker.
+ */
+entity SchoolClinicStaffMember {
+	dateAndTimeOfCreation LocalDateTime,
+	startDateAndTime LocalDateTime,
+	endDateAndTime LocalDateTime,
+	isActive Boolean,
+    name String
+}
+
+/**
+ * SchoolClinicYear entity.
+ * @author Baker.
+ */
+entity SchoolClinicYear {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * SchoolClub entity.
+ * @author Baker.
+ */
+entity SchoolClub {
+	dateAndTimeOfCreation LocalDateTime,
+    name String
+}
+
+/**
+ * SchoolClubYear entity.
+ * @author Baker.
+ */
+entity SchoolClubYear {
+	dateAndTimeOfCreation LocalDateTime,
+    startDateAndTime LocalDateTime,
+	endDateAndTime LocalDateTime,
+	isActive Boolean
+}
+
+/**
+ * SchoolDirector entity.
+ * @author Baker.
+ */
+entity SchoolDirector {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * SchoolDirectorYear entity.
+ * @author Baker.
+ */
+entity SchoolDirectorYear {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * SchoolExpenseYear entity.
+ * @author Baker.
+ */
+entity SchoolCustomExpenseYear {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * SchoolExpenseYear entity.
+ * @author Baker.
+ */
+entity SchoolStaffMemberSalarayYear {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * SchoolFeesInstallment entity.
+ * @author Baker.
+ */
+entity SchoolFeesInstallment {
+	dateAndTimeOfCreation LocalDateTime,
+    amountPaid Float,
+	reason String
+}
+
+/**
+ * SchoolFincialAccountTerminalLedger entity.
+ * @author Baker.
+ */
+entity SchoolFincialAccountTerminalLedger {
+	dateAndTimeOfCreation LocalDateTime,
+    balancedBroughtForward Float,
+	balanceCarriedForward Float
+}
+
+/**
+ * SchoolHostelMemberYear entity.
+ * @author Baker.
+ */
+entity SchoolHostelMemberYear {
+	dateAndTimeOfCreation LocalDateTime,
+    isActive Boolean
+}
+
+/**
+ * SchoolHostelWarden entity.
+ * @author Baker.
+ */
+entity SchoolHostelWarden  {
+	dateAndTimeOfCreation LocalDateTime,
+    startDateAndTime LocalDateTime,
+	endDateAndTime LocalDateTime,
+	isActive Boolean,
+    name String
+}
+
+/**
+ * SchoolHostelYear entity.
+ * @author Baker.
+ */
+entity SchoolHostelYear {
+	dateAndTimeOfCreation LocalDateTime,
+    isActive String
+}
+
+/**
+ * SchoolIntervalType entity.
+ * @author Baker.
+ */
+entity SchoolIntervalType {
+	dateAndTimeOfCreation LocalDateTime,
+    name String
+}
+
+/**
+ * SchoolLibraryYear entity.
+ * @author Baker.
+ */
+entity SchoolLibraryYear {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * SchoolParent entity.
+ * @author Baker.
+ */
+entity SchoolParent {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * SchoolParentYear entity.
+ * @author Baker.
+ */
+entity SchoolParentYear {
+	dateAndTimeOfCreation LocalDateTime,
+    isDead Boolean,
+	occupation String,
+	address String
+}
+
+/**
+ * SchoolRequirement entity.
+ * @author Baker.
+ */
+entity SchoolRequirement {
+	dateAndTimeOfCreation LocalDateTime,
+    name String
+}
+
+/**
+ * SchoolRequirementYear entity.
+ * @author Baker.
+ */
+entity SchoolRequirementYear {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * SchoolStaffMember entity.
+ * @author Baker.
+ */
+entity SchoolStaffMember {
+	dateAndTimeOfCreation LocalDateTime,
+    dateAndTimeOfEmployment LocalDateTime,
+	staffNumber String	
+}
+
+/**
+ * SchoolStaffMemberRenumeration entity.
+ * @author Baker.
+ */
+entity SchoolStaffMemberRenumeration {
+	dateAndTimeOfCreation LocalDateTime,
+    alias String,
+    name String
+}
+
+/**
+ * SchoolStaffMemberWeeklyAttendence entity.
+ * @author Baker.
+ */
+entity SchoolStaffMemberWeeklyAttendence {
+	dateAndTimeOfCreation LocalDateTime,
+    startDateAndTimeOfWeek LocalDateTime,
+	endDateAndTimeOfWeek LocalDateTime
+}
+
+/**
+ * SchoolStaffMemberYear entity.
+ * @author Baker.
+ */
+entity SchoolStaffMemberYear {
+	dateAndTimeOfCreation LocalDateTime,
+    office String,
+    isActive Boolean
+}
+
+/**
+ * SchoolStoreKeeper entity.
+ * @author Baker.
+ */
+entity SchoolStoreKeeper {
+	dateAndTimeOfCreation LocalDateTime,
+    starDateAndTime LocalDateTime,
+	endDateAndTime LocalDateTime.
+	isActive Boolean,
+    name String
+}
+
+/**
+ * SchoolStoreYear entity.
+ * @author Baker.
+ */
+entity SchoolStoreYear {
+	dateAndTimeOfCreation LocalDateTime,
+    isActive Boolean,
+	startDateAndTime LocalDateTime,
+	endDateAndTime LocalDateTime
+}
+
+/**
+ * SchoolStudent entity.
+ * @author Baker.
+ */
+entity SchoolStudent {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * SchoolStudentHostelTermMember entity.
+ * @author Baker.
+ */
+entity SchoolStudentHostelTermMember {
+	dateAndTimeOfCreation LocalDateTime,
+  	active Boolean,
+	startDateAndTime LocalDateTime,
+	endDateAndTime LocalDateTime,
+	roomNumber String,
+	bedNumber String,
+	hostelStudentNumber String	
+}
+
+/**
+ * SchoolStudentTerm entity.
+ * @author Baker.
+ */
+entity SchoolStudentTerm {
+	dateAndTimeOfCreation LocalDateTime,
+  	startDateAndTime LocalDateTime,
+	endDateAndTime LocalDateTime,
+	isActive Boolean
+}
+
+/**
+ * SchoolStudentTermFormFeeDefinition entity.
+ * @author Baker.
+ */
+entity SchoolStudentTermFormFeeDefinition {
+	dateAndTimeOfCreation LocalDateTime,
+    discountGiven Float,
+    startDateAndTime LocalDateTime,
+	endDateAndTime LocalDateTime,
+	isActive Boolean,
+	amount Float
+}
+
+/**
+ * SchoolStudentTermFormFeeDefinitionsContainer entity.
+ * @author Baker.
+ */
+entity SchoolStudentTermFormFeeDefinitionsContainer {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * SchoolStudentTermPaperPerformance entity.
+ * @author Baker.
+ */
+entity SchoolStudentTermPaperPerformance {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * SchoolStudentTermPaperPerformanceAssessment entity.
+ * @author Baker.
+ */
+entity SchoolStudentTermPaperPerformanceAssessment {
+	dateAndTimeOfCreation LocalDateTime,
+    score String,
+    manualSpecialRemark String
+}
+
+/**
+ * SchoolStudentTermReportAssessment entity.
+ * @author Baker.
+ */
+entity SchoolStudentTermReportAssessment {
+	dateAndTimeOfCreation LocalDateTime,
+    positionInClass Integer,
+	positionInStream Integer,
+	totalMarksAttained Float,
+	totalAggregatesAttained Float,
+	totalGradePointsAttained Float	
+}
+
+
+/**
+ * SchoolStudentTermSubjectPerformance entity.
+ * @author Baker.
+ */
+entity SchoolStudentTermSubjectPerformance {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * SchoolStudentTermSubjectPerformanceAssessment entity.
+ * @author Baker.
+ */
+entity SchoolStudentTermSubjectPerformanceAssessment {
+	dateAndTimeOfCreation LocalDateTime,
+    manualSpecialRemark String,
+    score String
+}
+
+/**
+ * SchoolStudentYear entity.
+ * @author Baker.
+ */
+entity SchoolStudentYear {
+	dateAndTimeOfCreation LocalDateTime,
+    startDateAndTime LocalDateTime,
+	endDateAndTime LocalDateTime,
+    isRetaker Boolean
+}
+
+/**
+ * SchoolTaxYear entity.
+ * @author Baker.
+ */
+entity SchoolTaxYear {
+	dateAndTimeOfCreation LocalDateTime,
+    startDateAndTime LocalDateTime,
+	endDateAndTime LocalDateTime
+}
+
+/**
+ * PerformanceChange Enum.
+ * @author Baker.
+ */
+enum PerformanceChange {
+    IMPROVEMENT,
+    DECLINE
+}
+
+/**
+ * SpecialRemark entity.
+ * @author Baker.
+ */
+entity SpecialRemark {
+	dateAndTimeOfCreation LocalDateTime,
+    changeInScore Float,
+    performanceChange PerformanceChange,
+    lowerMarkLimit Float,
+	upperMarkLimit Float,
+	comment String	
+}
+
+/**
+ * StaffMemberRenumerationInstallment entity.
+ * @author Baker.
+ */
+entity StaffMemberRenumerationInstallment {
+	dateAndTimeOfCreation LocalDateTime,
+    amountPaid Float,
+	reason String	
+}
+
+/**
+ * StaffMemberSalaryDefinition entity.
+ * @author Baker.
+ */
+entity StaffMemberSalaryDefinition {
+	dateAndTimeOfCreation LocalDateTime,
+    startDateAndTime  LocalDateTime,
+    endDateAndTime LocalDateTime,
+    isActive Boolean,
+    amount Float
+}
+
+/**
+ * StaffMemberSalaryDefinitionsContainer entity.
+ * @author Baker.
+ */
+entity StaffMemberSalaryDefinitionsContainer {
+	dateAndTimeOfCreation LocalDateTime,
+	isActive Boolean
+}
+
+/**
+ * StaffMemberSalaryIntervalPaymentStatus entity.
+ * @author Baker.
+ */
+entity StaffMemberSalaryIntervalPaymentStatus {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * StaffMemberWeeklyAttendence entity.
+ * @author Baker.
+ */
+entity StaffMemberWeeklyAttendence {
+	dateAndTimeOfCreation LocalDateTime,
+	mondayArrivalDateAndTime LocalDateTime,
+	mondayDepatureDateAndTime LocalDateTime,
+	mondayAttendenceStatus AttendenceStatus,
+	tuesdayArrivalDateAndTime LocalDateTime,
+	tuesdayDepatureDateAndTime LocalDateTime,
+	tuesdayAttendenceStatus AttendenceStatus,
+	wednesdayArrivalDateAndTime LocalDateTime
+	wednesdayDepatureDateAndTime LocalDateTime,
+	wednesdayAttendenceStatus AttendenceStatus,
+	thursdayArrivalDateAndTime LocalDateTime,
+	thursdayDepatureDateAndTime LocalDateTime,
+	thursdayAttendenceStatus AttendenceStatus,
+	fridayArrivalDateAndTime LocalDateTime,
+	fridayDepatureDateAndTime LocalDateTime,
+	fridayAttendenceStatus AttendenceStatus,
+	saturdaydayArrivalDateAndTime LocalDateTime,
+	saturdayDepatureDateAndTime LocalDateTime,
+	saturdayAttendenceStatus AttendenceStatus,
+	sundayArrivalDateAndTime LocalDateTime,
+	sundayDepatureDateAndTime LocalDateTime,
+	sunndayAttendenceStatus AttendenceStatus
+}
+
+/**
+ * Store entity.
+ * @author Baker.
+ */
+entity Store {
+	dateAndTimeOfCreation LocalDateTime,
+    name String
+}
+
+/**
+ * Stream entity.
+ * @author Baker.
+ */
+entity Stream {
+	dateAndTimeOfCreation LocalDateTime,
+    name String,
+	shortName String,
+	hasOptionalSubjects Boolean
+}
+
+/**
+ * StreamAnnualAttendenceRegister entity.
+ * @author Baker.
+ */
+entity StreamAnnualAttendenceRegister {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * StreamPaperTermEnrollementShip entity.
+ * @author Baker.
+ */
+entity StreamPaperTermEnrollementShip {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * StreamPaperYearEnrollementShip entity.
+ * @author Baker.
+ */
+entity StreamPaperYearEnrollementShip {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * StreamSubjectTermEnrollementShip entity.
+ * @author Baker.
+ */
+entity StreamSubjectTermEnrollementShip {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * StreamSubjectYearEnrollementShip entity.
+ * @author Baker.
+ */
+entity StreamSubjectYearEnrollementShip {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * StreamTerminalAttendenceRegister entity.
+ * @author Baker.
+ */
+entity StreamTerminalAttendenceRegister {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * StreamTermMemberShip entity.
+ * @author Baker.
+ */
+entity StreamTermMemberShip {
+	dateAndTimeOfCreation LocalDateTime,
+    boardersReportingDateAndTime LocalDateTime
+}
+
+/**
+ * StreamWeeklyAttendenceRegister entity.
+ * @author Baker.
+ */
+entity StreamWeeklyAttendenceRegister {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * StreamYearMemberShip entity.
+ * @author Baker.
+ */
+entity StreamYearMemberShip {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * StudentPaperAssessmentTask entity.
+ * @author Baker.
+ */
+entity StudentPaperAssessmentTask {
+	dateAndTimeOfCreation LocalDateTime,
+    score String,
+    manualSpecialRemark String
+}
+
+/**
+ * StudentPaperLessonAttendence entity.
+ * @author Baker.
+ */
+entity StudentPaperLessonAttendence {
+	dateAndTimeOfCreation LocalDateTime,
+    attendenceStatus AttendenceStatus
+}
+
+/**
+ * StudentSchooFeesPaymentIntervalStatus entity.
+ * @author Baker.
+ */
+entity StudentSchooFeesPaymentIntervalStatus {
+	dateAndTimeOfCreation LocalDateTime
+}
+
+/**
+ * StudentSubjectAssessmentTask entity.
+ * @author Baker.
+ */
+entity StudentSubjectAssessmentTask {
+	dateAndTimeOfCreation LocalDateTime,
+    score String,
+    manualSpecialRemark String
+}
+
+/**
+ * StudentSubjectLessonAttendence entity.
+ * @author Baker.
+ */
+entity StudentSubjectLessonAttendence {
+	dateAndTimeOfCreation LocalDateTime,
+  	attendenceStatus AttendenceStatus
+}
+
+/**
+ * StudentWeeklyAttendence entity.
+ * @author Baker.
+ */
+entity StudentWeeklyAttendence {
+	dateAndTimeOfCreation LocalDateTime,
+	mondayMorning AttendenceStatus,
+	mondayAfternoon AttendenceStatus,
+	tuesdayMorning AttendenceStatus,
+	tuesdayAfternoon AttendenceStatus,
+	wednesdayMorning AttendenceStatus,
+	wednesdayAfternoon  AttendenceStatus,
+	thursdayAfternoon AttendenceStatus,
+	fridayMorning AttendenceStatus,
+	fridayAfternoon AttendenceStatus,
+	saturdayMorning AttendenceStatus,
+	saturdayAfternoon AttendenceStatus,
+	sundayMorning AttendenceStatus,
+	sundayAfternoon AttendenceStatus
+}
+
+/**
+ * Subject entity.
+ * @author Baker.
+ */
+entity Subject {
+	dateAndTimeOfCreation LocalDateTime,
+    hasPapers Boolean,
+    name String,
+	shortName String,
+	code String
+}
+
+/**
+ * SubjectAssessmentTask entity.
+ * @author Baker.
+ */
+entity SubjectAssessmentTask {
+	dateAndTimeOfCreation LocalDateTime,
+    markedOutOf Float,	
+	name String	
+}
+
+/**
+ * SubjectLesson entity.
+ * @author Baker.
+ */
+entity SubjectLesson {
+	dateAndTimeOfCreation LocalDateTime,
+    location String,
+	startDateAndTime LocalDateTime,
+	endDateAndTime LocalDateTime	
+}
+
+/**
+ * Tax entity.
+ * @author Baker.
+ */
+entity Tax {
+	dateAndTimeOfCreation LocalDateTime,
+    name String
+}
+
+/**
+ * CalculationType Enumeration.
+ * @author Baker.
+ */
+enum CalculationType {
+    SUBTRACTION,
+    ADDITION,
+    NONE
+}
+
+/**
+ * TaxDefinition entity.
+ * @author Baker.
+ */
+entity TaxDefinition {
+	dateAndTimeOfCreation LocalDateTime,
+	percentageTaxLevy Float,
+    explicitTaxLevy Float,
+    isActive Boolean,
+    percentageTaxLevyCalculationType CalculationType,
+    explicitTaxLevyCalculationType CalculationType
+}
+
+/**
+ * Term entity.
+ * @author Baker.
+ */
+ entity Term {
+	dateAndTimeOfCreation LocalDateTime,
+    name String,
+	orderNumber Integer,
+    startDateAndTime LocalDateTime,
+    endDateAndTime LocalDateTime
+}
+
+
+/**
+ * TermMemberShipAssessment entity.
+ * @author Baker.
+ */
+entity TermMemberShipAssessment {
+	dateAndTimeOfCreation LocalDateTime,
+    name String
+}
+/**
+ * TermPaperEnrollementShipAssessment entity.
+ * @author Baker.
+ */
+entity TermPaperEnrollementShipAssessment {
+	dateAndTimeOfCreation LocalDateTime,
+    markedOutOf Float,
+    name String	
+}
+/**
+ * TermSubjectEnrollementShipAssessment entity.
+ * @author Baker.
+ */
+entity TermSubjectEnrollementShipAssessment {
+	dateAndTimeOfCreation LocalDateTime,
+    markedOutOf Float,
+    name String	
+}
+
+
+relationship OneToMany {
+	ReportAggregatesDivision{schoolStudentTermReportAssessments} to 
+    SchoolStudentTermReportAssessment{reportAggregatesDivision}
+}
+
+relationship ManyToOne {
+	FormTermMemberShipAggregatesDivision{formTermMemberShip} to
+    FormTermMemberShip{formTermMemberShipAggregatesDivisions}
+}
+
+relationship ManyToOne {
+    StreamTermMemberShipAggregatesDivision{streamTermMemberShip} to 
+    StreamTermMemberShip{streamTermMemberShipAggregatesDivisions}
+}
+
+relationship ManyToOne {
+	SubjectAssessmentTaskAggregatesGrading{subjectAssessmentTask} to 
+    SubjectAssessmentTask{subjectAssessmentTaskAggregatesGradings},
+    PaperAssessmentTaskAggregatesGrading{paperAssessmentTask} to 
+    PaperAssessmentTask{paperAssessmentTaskAggregatesGradings},
+    
+    FormPaperTermEnrollementShipAggregatesGrading{formPaperTermEnrollementShip} to 
+    FormPaperTermEnrollementShip{formPaperTermEnrollementShipAggregatesGradings},
+	StreamPaperTermEnrollementShipAggregatesGrading{streamPaperTermEnrollementShip} to 
+    StreamPaperTermEnrollementShip{streamPaperTermEnrollementShipAggregatesGradings}
+}
+
+relationship ManyToOne {
+	SubjectAssessmentTaskAssessmentUnit{subjectAssessmentTask} to 
+    SubjectAssessmentTask {subjectAssessmentTaskAssessmentUnits},
+    PaperAssessmentTaskAssessmentUnit{paperAssessmentTask} to 
+    PaperAssessmentTask {paperAssessmentTaskAssessmentUnits},
+    TermSubjectEnrollementShipAssessmentAssessmentUnit{termSubjectEnrollementShipAssessment} to
+    TermSubjectEnrollementShipAssessment {termSubjectEnrollementShipAssessmentAssessmentUnits},
+	TermPaperEnrollementShipAssessmentAssessmentUnit{termPaperEnrollementShipAssessment} to 
+    TermPaperEnrollementShipAssessment {termPaperEnrollementShipAssessmentAssessmentUnits}
+}
+
+relationship ManyToOne {
+	Clinic(school) to School {clinics}
+}
+
+relationship OneToMany {
+	Clinic{schoolClinicYears} to SchoolClinicYear(clinic)
+}
+
+relationship OneToOne {
+	Clinic{previousSchoolClinicYear} to SchoolClinicYear,
+    Clinic{currentSchoolClinicYear} to SchoolClinicYear,
+    Clinic{nextSchoolClinicYear} to SchoolClinicYear
+}
+
+relationship ManyToOne {
+	SchoolParentYearClinicalTreatment{schoolParentYear} to 
+    SchoolParentYear {schoolParentYearClinicalTreatments},
+    SchoolStudentYearClinicalTreatment{schoolStudentYear} to 
+    SchoolStudentYear{schoolStudentYearClinicalTreatments},
+    SchoolStaffMemberYearClinicalTreatment{schoolStaffMemberYear} to 
+    SchoolStaffMemberYear{schoolStaffMemberYearClinicalTreatments},
+    SchoolDirectorYearClinicalTreatment{schoolDirectorYear} to 
+    SchoolDirectorYear{schoolDirectorYearClinicalTreatments}
+}
+
+relationship ManyToOne {
+	SchoolParentYearClinicalTreatment{schoolClinicStaffMember} to 
+    SchoolClinicStaffMember{schoolParentYearClinicalTreatments},
+    SchoolStudentYearClinicalTreatment{schoolClinicStaffMember} to 
+    SchoolClinicStaffMember{schoolStudentYearClinicalTreatments},
+    SchoolStaffMemberYearClinicalTreatment{schoolClinicStaffMember} to 
+    SchoolClinicStaffMember{schoolStaffMemberYearClinicalTreatments},
+    SchoolDirectorYearClinicalTreatment{schoolClinicStaffMember} to 
+    SchoolClinicStaffMember{schoolDirectorYearClinicalTreatments}
+}
+
+relationship ManyToOne {
+	CustomExpense(school) to School{customExpenses}
+}
+
+relationship OneToMany {
+	CustomExpense(schoolCustomExpenseYears) to SchoolCustomExpenseYear{customExpense}
+}
+
+relationship OneToOne {
+	CustomExpense{previousSchoolCustomExpenseYear} to SchoolCustomExpenseYear,
+    CustomExpense{currentSchoolCustomExpenseYear} to SchoolCustomExpenseYear,
+    CustomExpense{nextSchoolCustomExpenseYear} to SchoolCustomExpenseYear
+}
+
+relationship OneToOne {
+	CustomExpenseDefinition{currentCustomExpenseDefinitionsContainer} to 
+    CustomExpenseDefinitionsContainer,
+    CustomExpenseDefinition{previousCustomExpenseDefinitionsContainer} to 
+    CustomExpenseDefinitionsContainer
+}
+
+relationship OneToMany {
+	CustomExpenseDefinition to CustomExpenseIntervalPaymentStatus{customExpenseDefinition}
+}
+
+relationship ManyToOne {
+	CustomExpenseDefinition(expenseIntervalDefinition) to ExpenseIntervalDefinition,
+    CustomExpenseDefinition(schoolExpenseYear) to SchoolExpenseYear
+}
+
+relationship ManyToMany {
+	CustomExpenseDefinition{customExpenseDefinitionsContainers} 
+    to CustomExpenseDefinitionsContainer{customExpenseDefinitions}
+}
+
+relationship OneToOne {
+	CustomExpenseDefinitionsContainer{previousCustomExpenseDefinitionsContainer} to
+    CustomExpenseDefinitionsContainer,
+    CustomExpenseDefinitionsContainer{nextCustomExpenseDefinitionsContainer} to
+    CustomExpenseDefinitionsContainer
+}
+
+relationship ManyToOne {
+	CustomExpenseDefinitionsContainer(customSchoolHumanEntityYear) to CustomSchoolHumanEntityYear
+}
+
+relationship ManyToMany {
+	CustomExpenseDefinitionsContainer{customExpenseDefinitions} to
+	CustomExpenseDefinition{customExpenseDefinitionsContainers} 
+}
+
+// Set an angular suffix
+ angularSuffix * with SchoolPlatform
